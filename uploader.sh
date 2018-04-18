@@ -4,7 +4,7 @@
 # 名称：KindleEar安装脚本
 # 作者：kindlefere.com
 # 页面：http://kindlefere.com/post/19.html
-# 更新：2017.02.09
+# 更新：2018.04.08
 # ------------------------------------------
 
 cd ~
@@ -23,7 +23,7 @@ else
             git clone https://github.com/cdhigh/KindleEar.git
         else
             cd ./KindleEar
-            git pull ./KindleEar
+            git pull
             cd ..
         fi
     fi
