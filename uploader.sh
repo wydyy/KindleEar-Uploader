@@ -2,9 +2,9 @@
 
 # ------------------------------------------
 # 名称：KindleEar安装脚本
-# 作者：kindlefere.com
-# 页面：http://kindlefere.com/post/19.html
-# 更新：2018.04.08
+# 作者：bookfere.com
+# 页面：https://bookfere.com/post/19.html
+# 更新：2018.04.18
 # ------------------------------------------
 
 cd ~
