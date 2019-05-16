@@ -9,7 +9,7 @@
 
 cd ~
 
-if [ ! -d "./KindleEar" ]
+if [ ! -d "./KindleEar-1" ]
 then
     git clone https://github.com/wydyy/KindleEar-1.git
 else
@@ -17,19 +17,19 @@ else
     read -r -p '已存在 KindleEar 源码，是否更新？[y/N]' response
     if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]
     then
-        if [[ ! -d "./KindleEar/.git" ]]
+        if [[ ! -d "./KindleEar-1/.git" ]]
         then
-            rm -rf ./KindleEar
+            rm -rf ./KindleEar-1
             git clone https://github.com/wydyy/KindleEar-1.git
         else
-            cd ./KindleEar
+            cd ./KindleEar-1
             git pull
             cd ..
         fi
     fi
 fi
 
-cd KindleEar
+cd KindleEar-1
 
 cemail=$(sed -n "s/^SRC_EMAIL\ =\ \"\(.*\)\".*#.*/\1/p" ./config.py)
 cappid=$(sed -n "s/^DOMAIN\ =\ \"http\(\|s\):\/\/\(.*\)\.appspot\.com\/\".*#.*/\2/p" ./config.py)
